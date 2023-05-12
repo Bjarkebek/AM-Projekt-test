@@ -1,0 +1,50 @@
+Top As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: |
+        =160
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Image3_6 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =53
+        Image: ='scan (1)'
+        OnSelect: =Select(scan_afd_valg_6)
+        Width: =52
+        X: =532
+        Y: =54
+        ZIndex: =1
+
+    scan_afd_valg_6 As barcodeScanner:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =53
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        Size: =24
+        Text: ="Scan"
+        Visible: =false
+        Width: =52
+        X: =532
+        Y: =54
+        ZIndex: =2
+
+    Image1_9 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =160
+        Image: =tec
+        OnSelect: =
+        Width: =195
+        X: =221
+        ZIndex: =3
+

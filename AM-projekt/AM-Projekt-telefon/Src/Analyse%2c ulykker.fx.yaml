@@ -1,0 +1,271 @@
+"'Analyse, ulykker' As screen":
+    Fill: =RGBA(234, 234, 234, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    "'tilbage-anaUlykke' As icon.ArrowLeft":
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate(afd_valg)
+        Width: =51
+        X: =50
+        Y: =62
+        ZIndex: =2
+
+    anaUlykke_text As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =88
+        Size: =28
+        Text: ="Analyse af ulykke eller nærved-ulykke"
+        Width: =460
+        X: =90
+        Y: =171
+        ZIndex: =3
+
+    "'tec_logo-anaUlykke' As image":
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =160
+        Image: =tec
+        OnSelect: =
+        Width: =195
+        X: =222
+        ZIndex: =6
+
+    "'qr_scan-anaUlykke' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =6
+
+        "'scan-nyulykke_img_1' As image":
+            BorderColor: =RGBA(89, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =49
+            Image: ='25213'
+            OnSelect: =Select('scan-nyulykke_1')
+            Width: =48
+            X: =540
+            Y: =55
+            ZIndex: =4
+
+        "'scan-nyulykke_1' As barcodeScanner":
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(164, 38, 44, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =49
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+            Size: =24
+            Text: ="Scan"
+            Visible: =false
+            Width: =48
+            X: =540
+            Y: =55
+            ZIndex: =5
+
+    TextInput1 As text:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =124
+        HintText: ="Tekst..."
+        HoverBorderColor: =RGBA(89, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(222, 179, 184, 1)
+        Mode: =TextMode.MultiLine
+        Size: =21
+        Width: =560
+        X: =39
+        Y: =336
+        ZIndex: =7
+
+    Label1 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =50
+        Size: =21
+        Text: ="Kortlægning af kendsgerninger"
+        Width: =560
+        X: =50
+        Y: =286
+        ZIndex: =8
+
+    TextInput1_1 As text:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =124
+        HintText: ="Tekst..."
+        HoverBorderColor: =RGBA(89, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(222, 179, 184, 1)
+        Mode: =TextMode.MultiLine
+        Size: =21
+        Width: =560
+        X: =39
+        Y: =536
+        ZIndex: =9
+
+    Label1_1 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =50
+        Size: =21
+        Text: ="Analyse af ulykken"
+        Width: =560
+        X: =50
+        Y: =486
+        ZIndex: =10
+
+    TextInput1_2 As text:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =124
+        HintText: ="Tekst..."
+        HoverBorderColor: =RGBA(89, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(222, 179, 184, 1)
+        Mode: =TextMode.MultiLine
+        Size: =21
+        Width: =560
+        X: =39
+        Y: =758
+        ZIndex: =11
+
+    Label1_2 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =50
+        Size: =21
+        Text: ="Forebyg at det sker igen"
+        Width: =560
+        X: =50
+        Y: =708
+        ZIndex: =12
+
+    Button2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        OnSelect: =Set(varPopup1, true)
+        Size: =24
+        Text: ="Knap"
+        Width: =57
+        X: =468
+        Y: =286
+        ZIndex: =13
+
+    popup1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =17
+
+        Rectangle2 As rectangle:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Fill: =
+            Height: =1136
+            Visible: =Boolean(varPopup1)
+            Width: =640
+            ZIndex: =1
+
+        popupfill As rectangle:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Fill: =
+            Height: =956
+            Visible: =Boolean(varPopup1)
+            Width: =539
+            X: =50
+            Y: =120
+            ZIndex: =14
+
+        Label3 As label:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =
+            Height: =866
+            Size: =21
+            Text: |-
+                ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt accumsan varius. Aliquam facilisis vestibulum tempus. Mauris quis fermentum enim. Pellentesque facilisis, nibh eget vulputate tincidunt, nisl metus pulvinar tellus, eget sagittis erat lorem vel neque. Morbi molestie ultrices consequat. Aenean egestas ac dui et pharetra. Nam sapien lacus, eleifend in lectus in, convallis ullamcorper erat. Praesent luctus pellentesque ipsum vitae dignissim. Aliquam dui urna, lacinia at dolor facilisis, ultricies tempor massa. Phasellus cursus sodales magna non pulvinar.
+                
+                Vestibulum vehicula neque et tellus vestibulum vestibulum. Sed vestibulum diam id orci gravida, ut eleifend ipsum laoreet. Suspendisse neque magna, viverra lacinia velit sed, aliquet vulputate neque. Praesent ut feugiat est. Fusce vel nibh quis est tempor volutpat eget in nisl. In tristique odio non diam volutpat, vitae scelerisque urna convallis. Suspendisse eu feugiat ex, nec sagittis massa. In faucibus lacinia orci a sollicitudin. Vestibulum fringilla massa ac augue tincidunt convallis. Etiam vestibulum magna elit, vel iaculis dolor euismod vel. Sed varius egestas turpis, vel egestas nunc. Donec at molestie nisl. Ut nisl dui, varius quis urna sed, laoreet lacinia magna. Proin interdum fermentum quam lacinia efficitur. Sed placerat erat id est viverra, ac pellentesque ligula mattis.
+                
+                Sed malesuada cursus massa nec condimentum. Vivamus tempus pellentesque dui, quis semper massa mollis nec. Duis ut placerat urna, in posuere orci. Aenean vehicula pharetra magna. Maecenas aliquam tincidunt est eget eleifend. Vestibulum iaculis tellus quis ante semper consectetur. Nullam eu risus volutpat, sodales metus eu, porta odio. Pellentesque hendrerit turpis id libero cursus, ac egestas diam interdum. Fusce feugiat tellus tincidunt est elementum pharetra. Maecenas eget venenatis justo, ut tristique lacus. Suspendisse sed risus tellus. Etiam maximus tellus mattis, gravida dui in, finibus nisi. Suspendisse turpis quam, vulputate quis tellus vitae, tincidunt suscipit nulla. Fusce facilisis pellentesque ligula sed luctus. Donec laoreet vel purus non euismod.
+                
+                Nulla et felis vel mi rutrum maximus. Vivamus neque sem, vestibulum eget quam pretium, fringilla imperdiet eros. Donec in lectus nulla. Sed rutrum eros accumsan semper maximus. Vestibulum quis magna libero. Duis dui magna, aliquam ac tortor tempor, blandit ultrices felis. Etiam lacinia varius arcu non imperdiet. Nunc aliquam lorem diam, vitae dapibus enim iaculis ac. Suspendisse ultrices ligula sed mauris aliquet suscipit. Nullam in tincidunt turpis.
+                
+                Aenean porta tortor quis condimentum scelerisque. Nulla tincidunt justo vel libero dapibus, vel elementum ligula bibendum. Mauris fermentum sem at metus interdum, ac viverra augue scelerisque. Mauris ut consequat nulla, sit amet laoreet ante. Donec porta interdum fermentum. Praesent ultricies odio eget augue tempor placerat. Sed scelerisque suscipit turpis. Curabitur tristique, purus id tincidunt bibendum, turpis dolor gravida urna, lobortis cursus arcu tellus in tortor. Nulla laoreet vel sapien at consequat. Nullam tellus mauris, fermentum sit amet metus at, mattis molestie urna. Pellentesque nisi purus, vehicula ac consectetur varius, mattis eget ipsum. Nulla bibendum leo id dignissim dictum. Sed dapibus diam mi, ultrices fermentum erat interdum ac. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                
+                Nulla enim orci, iaculis nec urna vitae, posuere faucibus arcu. Donec nec luctus neque, eu gravida orci. Proin at elementum nibh. Suspendisse scelerisque, odio id volutpat tempor, tortor lectus luctus felis, ut malesuada libero risus laoreet libero. In auctor, leo a interdum porttitor, eros sapien laoreet massa, non fringilla augue lectus vel nunc. Suspendisse efficitur orci ac posuere consectetur. Nullam in laoreet elit. Curabitur lacinia tellus a egestas gravida. In dolor arcu, eleifend in ultrices quis, dapibus quis nulla.
+                
+                Donec id justo justo. Proin rhoncus, justo vel interdum ullamcorper, orci nulla tempus quam, quis finibus enim neque nec urna. In hac habitasse platea dictumst. Aenean lacinia nunc ut felis molestie, ac molestie dolor dignissim. Duis et turpis auctor, eleifend metus eget, pretium velit. Nam quis est cursus, fermentum lorem sed, rhoncus diam. Aenean venenatis, erat vel rutrum mattis, libero mauris elementum sem, non cursus lectus nisi quis libero. Curabitur dictum a erat a lacinia. Vivamus consectetur sagittis augue vel tincidunt.
+                
+                Pellentesque mi enim, sollicitudin non ligula at, suscipit aliquam ante. Phasellus ligula tellus, pharetra nec orci a, pretium dignissim est. Vestibulum vel condimentum quam. Ut mattis libero at nisi tempor, eget blandit justo pulvinar. Duis varius et dolor eu commodo. Mauris nec orci ultricies, accumsan mauris eu, laoreet metus. Quisque pharetra in sem et dictum. Phasellus non elementum risus. Nulla molestie rhoncus dui. Donec tincidunt, risus non pulvinar ultrices, nisl urna venenatis sem, quis placerat enim ligula a ante. Sed a imperdiet odio. Suspendisse potenti. Curabitur at odio in eros laoreet consequat eget quis mi.
+                
+                Duis eget enim nulla. Donec id massa et tortor sagittis ornare at consequat sapien. Maecenas interdum magna fermentum, accumsan libero quis, tempus ipsum. Suspendisse lobortis diam ut tortor finibus, nec hendrerit quam tristique. Proin nec quam non purus hendrerit ornare. Sed et orci ligula. Nunc sed volutpat dolor. Pellentesque in molestie tellus. Nam vulputate massa ac ipsum semper cursus."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =Boolean(varPopup1)
+            Width: =462
+            X: =86
+            Y: =163
+            ZIndex: =15
+
+        Button5 As button:
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =36
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+            OnSelect: =Set(varPopup, false)
+            Size: =24
+            Text: ="X"
+            Visible: =Boolean(varPopup1)
+            Width: =34
+            X: =540
+            Y: =135
+            ZIndex: =16
+

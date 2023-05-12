@@ -1,0 +1,221 @@
+"'Apv og handleplaner' As screen":
+    Fill: =RGBA(234, 234, 234, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    Label3_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =31
+        Text: ="Ulykker og nærved-ulykker"
+        Width: =640
+        Y: =171
+        ZIndex: =1
+
+    DataTable2_1 As dataTable.datatable:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(220, 220, 220, 1)
+        Font: =Font.'Open Sans'
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =RGBA(164, 38, 44, 1)
+        HeadingFont: =Font.'Open Sans'
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =21
+        Height: =721
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(222, 179, 184, .2)
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        LinkColor: =RGBA(0, 134, 208, 1)
+        PrimaryColor1: =RGBA(164, 38, 44, 1)
+        PrimaryColor2: =RGBA(89, 0, 0, 1)
+        PrimaryColor3: =RGBA(222, 179, 184, 1)
+        SelectedColor: =RGBA(0, 0, 0, 1)
+        SelectedFill: =RGBA(164, 38, 44, .2)
+        Size: =21
+        Width: =640
+        X: =0
+        Y: =415
+        ZIndex: =6
+
+    Dropdown2_1 As dropdown:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        ChevronBackground: =RGBA(230, 230, 230, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronFill: =RGBA(0, 0, 0, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(220, 220, 220, 1)
+        Height: =70
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(222, 179, 184, 1)
+        Items: =["Alle AM-grupper"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(89, 0, 0, 1)
+        SelectionFill: =RGBA(164, 38, 44, 1)
+        Size: =21
+        Width: =566
+        X: =36
+        Y: =252
+        ZIndex: =7
+
+    "'scan-ulykker_img_1' As image":
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =49
+        Image: ='25213'
+        OnSelect: =Select('scan-ulykker_1')
+        Width: =48
+        X: =540
+        Y: =55
+        ZIndex: =8
+
+    "'scan-ulykker_1' As barcodeScanner":
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =49
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        Size: =24
+        Text: ="Scan"
+        Visible: =false
+        Width: =48
+        X: =540
+        Y: =55
+        ZIndex: =9
+
+    Image1_8 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =160
+        Image: =tec
+        OnSelect: =
+        Width: =195
+        X: =3
+        ZIndex: =10
+
+    Knapper_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
+
+        Button3_3 As button:
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(222, 217, 217, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =41
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =16
+            Text: ="Alle"
+            Width: =130
+            X: =36
+            Y: =343
+            ZIndex: =2
+
+        Button3_4 As button:
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(222, 217, 217, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =41
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =16
+            Text: ="Løst"
+            Width: =130
+            X: =189
+            Y: =343
+            ZIndex: =3
+
+        Button3_5 As button:
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(222, 217, 217, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =41
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =16
+            Text: ="Uløst"
+            Width: =197
+            X: =343
+            Y: =343
+            ZIndex: =4
+
+        Button4_1 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 107, 107, 1)
+            Height: =41
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+            PaddingBottom: =6
+            PaddingLeft: =3
+            PaddingRight: =3
+            PaddingTop: =2
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Size: =40
+            Text: ="+"
+            Width: =41
+            X: =561
+            Y: =343
+            ZIndex: =5
+
+    Icon1_7 As icon.ArrowLeft:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate(afd_valg)
+        Width: =51
+        X: =39
+        Y: =129
+        ZIndex: =11
+

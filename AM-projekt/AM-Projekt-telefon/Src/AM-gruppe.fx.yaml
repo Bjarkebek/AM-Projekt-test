@@ -1,0 +1,134 @@
+"'AM-gruppe' As screen":
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    "'AM table' As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        BorderColor: =RGBA(210, 218, 226, 1)
+        Height: =768
+        Items: =Search(Filter('AM-gruppers', Afdeling.Afd_ID = 'Afdelinger table'.Selected.Afd_ID), 'AM søgebar'.Text, "crb3b_name")
+        Layout: =Layout.Vertical
+        OnSelect: =Navigate(Lokale, ScreenTransition.Fade)
+        TemplatePadding: =0
+        TemplateSize: =69
+        Width: =530
+        X: =55
+        Y: =315
+        ZIndex: =2
+
+        Title2_2 As label:
+            Color: =RGBA(48, 65, 74, 1)
+            DisabledBorderColor: =RGBA(48, 65, 74, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.AM_navn
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        NextArrow2_2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(153, 153, 153, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =42
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="Få vist elementdetaljer"
+            Width: =51
+            X: =479
+            Y: =13
+            ZIndex: =2
+
+        Separator2_2 As rectangle:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Fill: =RGBA(210, 218, 226, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
+    "'AM søgebar' As text":
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(220, 220, 220, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =51
+        HintText: ="Søg AM-gruppe"
+        HoverBorderColor: =RGBA(242, 242, 242, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(201, 201, 201, 1)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =15
+        Tooltip: ="Søg AM-gruppe"
+        Width: =560
+        X: =39
+        Y: =223
+        ZIndex: =3
+
+    "'AM overskrift' As label":
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(48, 65, 74, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =88
+        Size: =31
+        Text: |-
+            ="Vælg AM-gruppe
+            "
+        Width: =371
+        X: =134
+        Y: =120
+        ZIndex: =4
+
+    "'Top bar_1' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
+
+        Top_2 As Top:
+            Y: =1
+            ZIndex: =5
+
+        Image2_1 As image:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =35
+            Image: =arrow
+            OnSelect: =Navigate(Afdeling, ScreenTransition.Fade)
+            Width: =35
+            X: =54
+            Y: =64
+            ZIndex: =6
+

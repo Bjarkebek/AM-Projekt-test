@@ -1,0 +1,93 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crb3b_vrktjers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crb3b_vrktjer",
+    "MaxGetRowsCount": 500,
+    "Name": "Værktøjers",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crb3b_navn": "Navn",
+      "crb3b_vrktjer_AsyncOperations": "Systemjob",
+      "crb3b_vrktjer_BulkDeleteFailures": "Fejl under massesletning",
+      "crb3b_vrktjer_PrincipalObjectAttributeAccesses": "Feltdeling",
+      "crb3b_vrktjer_ProcessSession": "Processessioner",
+      "crb3b_vrktjerid": "Værktøjer",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Værktøjers",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Værktøjers (Visninger)",
+    "Name": "_crb3b_vrktjer_views",
+    "RelatedEntityName": "Værktøjers",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2cdaa7a5-da8e-4d9a-b5d3-d5a4dcedb58e": "Active Værktøjers",
+      "41405ed9-8f21-42cc-a148-ee8a274e3d5f": "Inactive Værktøjers",
+      "59f7d75a-a6a8-4ccd-871b-100f2c56fbf5": "Værktøjer Lookup View",
+      "5dab6937-214f-4f79-a303-44a6cc01b995": "Værktøjer Advanced Find View",
+      "927902ee-2f4b-4232-a839-e931a4b11fa3": "Værktøjer Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Værktøjers)",
+    "Name": "crb3b_vrktjer_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Værktøjers"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Værktøjers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Værktøjers)",
+    "Name": "crb3b_vrktjer_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Værktøjers"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Værktøjers",
+    "Type": "OptionSetInfo"
+  }
+]

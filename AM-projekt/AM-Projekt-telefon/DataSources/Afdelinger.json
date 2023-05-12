@@ -1,0 +1,96 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crb3b_afdelings",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crb3b_afdeling",
+    "MaxGetRowsCount": 500,
+    "Name": "Afdelinger",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Ejer",
+      "crb3b_afd_navn": "afd_navn",
+      "crb3b_afdeling_AsyncOperations": "Systemjob",
+      "crb3b_afdeling_BulkDeleteFailures": "Fejl under massesletning",
+      "crb3b_afdeling_PrincipalObjectAttributeAccesses": "Feltdeling",
+      "crb3b_afdeling_ProcessSession": "Processessioner",
+      "crb3b_afdelingid": "Afdeling",
+      "crb3b_beskrivelse": "Beskrivelse",
+      "crb3b_crb3b_amgrupper_Afdeling_crb3b_afdeling": "AM-gruppers",
+      "crb3b_navn": "Afd_ID",
+      "createdby": "Oprettet af",
+      "createdon": "Oprettet",
+      "createdonbehalfby": "Oprettet af (stedfortræder)",
+      "importsequencenumber": "Importsekvensnummer",
+      "modifiedby": "Ændret af",
+      "modifiedon": "Ændret",
+      "modifiedonbehalfby": "Ændret af (stedfortræder)",
+      "overriddencreatedon": "Posten blev oprettet den",
+      "owningbusinessunit": "Ejende afdeling",
+      "owningteam": "Ejende team",
+      "owninguser": "Ejende bruger",
+      "statecode": "Status",
+      "statuscode": "Statusårsag",
+      "timezoneruleversionnumber": "Versionsnummer for tidszoneregel",
+      "utcconversiontimezonecode": "Tidszonekode for UTC-konvertering",
+      "versionnumber": "Versionsnummer"
+    },
+    "PreferredName": "Afdelinger",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Afdelinger (Visninger)",
+    "Name": "_crb3b_afdeling_views",
+    "RelatedEntityName": "Afdelinger",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0b23c02f-57da-4bd4-b838-5f79a82c0d3c": "Afdeling Advanced Find View",
+      "21201376-5e99-4cd9-81f6-1cbf3a6c6017": "Afdeling Associated View",
+      "71ba10be-47a0-49b2-8968-8ba81013bcb3": "Inactive Afdelinger",
+      "92569755-03a9-4ce2-becf-f3582041e44d": "Active Afdelinger",
+      "cf459b14-dde7-4ed7-a59d-628c068c6815": "Afdeling Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Afdelinger)",
+    "Name": "crb3b_afdeling_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Aktiv",
+      "1": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Afdelinger"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Afdelinger",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Statusårsag (Afdelinger)",
+    "Name": "crb3b_afdeling_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Aktiv",
+      "2": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Afdelinger"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Afdelinger",
+    "Type": "OptionSetInfo"
+  }
+]

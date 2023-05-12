@@ -1,0 +1,150 @@
+Afdeling As screen:
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    "'APV knap' As Knap":
+        BorderRadius: =15
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =RGBA(248, 110, 110, 1)
+        FontSize: =17
+        FontWeight: =FontWeight.Bold
+        Height: =56
+        HoverFillColor: =RGBA(250, 125, 125, 1)
+        Text: ="APV og handleplaner"
+        Width: =530
+        X: =53
+        Y: =1033
+        ZIndex: =1
+
+    "'Ulykker knap' As Knap":
+        BorderRadius: =15
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =RGBA(247, 109, 109, 1)
+        FontSize: =17
+        FontWeight: =FontWeight.Bold
+        Height: =56
+        HoverFillColor: =RGBA(250, 125, 125, 1)
+        Text: ="Ulykker og nærved-ulykker"
+        Width: =530
+        X: =54
+        Y: =954
+        ZIndex: =2
+
+    "'Arbejdsmiljødrøftelse knap' As Knap":
+        BorderRadius: =15
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =RGBA(248, 110, 110, 1)
+        FontSize: =17
+        FontWeight: =FontWeight.Bold
+        Height: =56
+        HoverBorderColor: =
+        HoverFillColor: =RGBA(250, 125, 125, 1)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        Text: ="Arbejdsmiljødrøftelse"
+        Width: =530
+        X: =55
+        Y: =875
+        ZIndex: =3
+
+    "'Afdelinger table' As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        BorderColor: =RGBA(210, 218, 226, 1)
+        Height: =497
+        Items: =Afdelinger
+        Layout: =Layout.Vertical
+        OnSelect: =Navigate('AM-gruppe', ScreenTransition.Fade)
+        TemplatePadding: =0
+        TemplateSize: =71
+        Width: =530
+        X: =55
+        Y: =208
+        ZIndex: =4
+
+        Title2_1 As label:
+            Color: =RGBA(48, 65, 74, 1)
+            DisabledBorderColor: =RGBA(48, 65, 74, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.afd_navn
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        NextArrow2_1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(210, 218, 226, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =0
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="Få vist elementdetaljer"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =2
+
+        Separator2_1 As rectangle:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Fill: =RGBA(218, 218, 218, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
+    Overskrift As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(48, 65, 74, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =88
+        Size: =31
+        Text: |-
+            ="Vælg afdeling
+            "
+        Width: =371
+        X: =134
+        Y: =120
+        ZIndex: =6
+
+    "'Top bar' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =8
+
+        Top_1 As Top:
+            Y: =1
+            ZIndex: =5
+
+        Image2 As image:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =35
+            Image: =arrow
+            OnSelect: =Navigate('Log ind')
+            Width: =35
+            X: =54
+            Y: =64
+            ZIndex: =7
+

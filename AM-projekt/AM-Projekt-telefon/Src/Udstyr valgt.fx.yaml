@@ -1,0 +1,113 @@
+"'Udstyr valgt' As screen":
+    Fill: =RGBA(234, 234, 234, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    Image1_7 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =160
+        Image: =tec
+        OnSelect: =
+        Width: =195
+        ZIndex: =1
+
+    Image3_5 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =49
+        Image: ='25213'
+        OnSelect: =Select(scan_afd_valg_5)
+        Width: =48
+        X: =540
+        Y: =55
+        ZIndex: =2
+
+    scan_afd_valg_5 As barcodeScanner:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =49
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        Size: =24
+        Text: ="Scan"
+        Visible: =false
+        Width: =48
+        X: =540
+        Y: =55
+        ZIndex: =3
+
+    Icon1_6 As icon.ArrowLeft:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate(afd_valg)
+        Width: =51
+        X: =36
+        Y: =129
+        ZIndex: =4
+
+    login_btn_3 As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 107, 107, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =63
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        OnSelect: =
+        Size: =20
+        Text: |-
+            ="Instruktioner
+            "
+        Width: =408
+        X: =132
+        Y: =406
+        ZIndex: =5
+
+    login_btn_4 As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 107, 107, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =63
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        OnSelect: =
+        Size: =20
+        Text: ="Eftersyn"
+        Width: =408
+        X: =132
+        Y: =509
+        ZIndex: =6
+
+    login_btn_5 As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 107, 107, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =115
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        OnSelect: =Navigate(afd_valg)
+        Size: =20
+        Text: ="Tilbage til afdeling valg"
+        Width: =408
+        X: =132
+        Y: =702
+        ZIndex: =7
+

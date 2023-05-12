@@ -1,0 +1,275 @@
+"'Opret handleplan' As screen":
+    Fill: =RGBA(234, 234, 234, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    "'tec_logo-nyulykke_3' As image":
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =160
+        Image: =tec
+        OnSelect: =
+        Width: =195
+        ZIndex: =4
+
+    "'tilbage-nyulykke_3' As icon.ArrowLeft":
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate(afd_valg)
+        Width: =51
+        X: =36
+        Y: =129
+        ZIndex: =5
+
+    nyulykke_text_3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =88
+        Size: =31
+        Text: ="Opret handleplan"
+        Width: =640
+        Y: =171
+        ZIndex: =6
+
+    Canvas2_2 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =767
+        Width: =Parent.Width
+        Y: =259
+        ZIndex: =9
+
+        DataCard3_2 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1224
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            foto_1 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =14
+
+                foto_text_1 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =60
+                    Size: =21
+                    Text: ="Foto"
+                    Width: =575
+                    X: =30
+                    Y: =585
+                    ZIndex: =10
+
+                foto_upload_1 As addMedia:
+                    BorderColor: =RGBA(230, 230, 230, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =119
+                    Size: =25
+                    Text: ="Tilføj billede"
+                    Width: =575
+                    X: =30
+                    Y: =645
+                    ZIndex: =13
+
+            beskrivelse_1 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =14
+
+                beskr_text_1 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =48
+                    Size: =21
+                    Text: ="Problembeskrivelse"
+                    Width: =575
+                    X: =30
+                    Y: =293
+                    ZIndex: =8
+
+                beskr_input_1 As text:
+                    BorderColor: =RGBA(230, 230, 230, 1)
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FocusedBorderThickness: =4
+                    Height: =213
+                    HintText: ="beskrivelse..."
+                    HoverBorderColor: =RGBA(89, 0, 0, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(222, 179, 184, 1)
+                    Mode: =TextMode.MultiLine
+                    Size: =18
+                    Width: =575
+                    X: =30
+                    Y: =341
+                    ZIndex: =9
+
+            am_1 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =14
+
+                am_input_1 As dropdown:
+                    BorderColor: =RGBA(230, 230, 230, 1)
+                    ChevronBackground: =RGBA(230, 230, 230, 1)
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronFill: =RGBA(0, 0, 0, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    Default: ="Vælg AM-Gruppe"
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =53
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(222, 179, 184, 1)
+                    Items: =["Vælg AM-gruppe"]
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(89, 0, 0, 1)
+                    SelectionFill: =RGBA(164, 38, 44, 1)
+                    Size: =18
+                    Width: =575
+                    X: =30
+                    Y: =66
+                    ZIndex: =6
+
+                am_text_1 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =50
+                    Size: =21
+                    Text: |-
+                        ="Arbejdsmiljøgruppen
+                        "
+                    Width: =575
+                    X: =30
+                    Y: =17
+                    ZIndex: =7
+
+            udaf_1 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =14
+
+                udaf_input_1 As text:
+                    BorderColor: =RGBA(230, 230, 230, 1)
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FocusedBorderThickness: =4
+                    Height: =53
+                    HintText: ="problemoverskrift..."
+                    HoverBorderColor: =RGBA(89, 0, 0, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(222, 179, 184, 1)
+                    Size: =18
+                    Width: =575
+                    X: =30
+                    Y: =202
+                    ZIndex: =4
+
+                udaf_text_1 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =50
+                    Size: =21
+                    Text: |-
+                        ="Problemoverskrift
+                        "
+                    Width: =575
+                    X: =30
+                    Y: =152
+                    ZIndex: =5
+
+    "'qr_scan-nyulykke_3' As group":
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =9
+
+        "'scan-nyulykke_img_3' As image":
+            BorderColor: =RGBA(89, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =49
+            Image: ='25213'
+            OnSelect: =Select('scan-nyulykke_3')
+            Width: =48
+            X: =540
+            Y: =55
+            ZIndex: =7
+
+        "'scan-nyulykke_3' As barcodeScanner":
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(164, 38, 44, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =49
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+            Size: =24
+            Text: ="Scan"
+            Visible: =false
+            Width: =48
+            X: =540
+            Y: =55
+            ZIndex: =8
+
+    Button1_1 As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 107, 107, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =68
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        Size: =24
+        Text: ="Gem"
+        Width: =460
+        X: =90
+        Y: =1050
+        ZIndex: =10
+

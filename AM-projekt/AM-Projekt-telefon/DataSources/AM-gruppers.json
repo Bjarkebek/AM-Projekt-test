@@ -1,0 +1,96 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crb3b_amgruppers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crb3b_amgrupper",
+    "MaxGetRowsCount": 500,
+    "Name": "AM-gruppers",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Ejer",
+      "crb3b_Afdeling": "Afdeling",
+      "crb3b_amgrupper_AsyncOperations": "Systemjob",
+      "crb3b_amgrupper_BulkDeleteFailures": "Fejl under massesletning",
+      "crb3b_amgrupper_PrincipalObjectAttributeAccesses": "Feltdeling",
+      "crb3b_amgrupper_ProcessSession": "Processessioner",
+      "crb3b_amgrupperid": "AM-grupper",
+      "crb3b_crb3b_lokale_AMgruppe_crb3b_amgrupper": "Lokaler",
+      "crb3b_name": "AM_navn",
+      "crb3b_navn": "AM_ID",
+      "createdby": "Oprettet af",
+      "createdon": "Oprettet",
+      "createdonbehalfby": "Oprettet af (stedfortræder)",
+      "importsequencenumber": "Importsekvensnummer",
+      "modifiedby": "Ændret af",
+      "modifiedon": "Ændret",
+      "modifiedonbehalfby": "Ændret af (stedfortræder)",
+      "overriddencreatedon": "Posten blev oprettet den",
+      "owningbusinessunit": "Ejende afdeling",
+      "owningteam": "Ejende team",
+      "owninguser": "Ejende bruger",
+      "statecode": "Status",
+      "statuscode": "Statusårsag",
+      "timezoneruleversionnumber": "Versionsnummer for tidszoneregel",
+      "utcconversiontimezonecode": "Tidszonekode for UTC-konvertering",
+      "versionnumber": "Versionsnummer"
+    },
+    "PreferredName": "AM-gruppers",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "AM-gruppers (Visninger)",
+    "Name": "_crb3b_amgrupper_views",
+    "RelatedEntityName": "AM-gruppers",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "286e9491-9c5b-44f9-87f2-3727490096ff": "AM-grupper Associated View",
+      "2b3dee67-7c17-42c4-9cda-b4bbdd3e3d61": "AM-grupper Lookup View",
+      "453c28df-a4ca-46ee-ad0a-a472002357c6": "Inactive AM-gruppers",
+      "abe3c605-6017-45c1-a6ce-065079734466": "Active AM-gruppers",
+      "ef380270-9c36-4721-b443-14d7a2dc0ab6": "AM-grupper Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (AM-gruppers)",
+    "Name": "crb3b_amgrupper_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Aktiv",
+      "1": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "AM-gruppers"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "AM-gruppers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Statusårsag (AM-gruppers)",
+    "Name": "crb3b_amgrupper_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Aktiv",
+      "2": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "AM-gruppers"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "AM-gruppers",
+    "Type": "OptionSetInfo"
+  }
+]

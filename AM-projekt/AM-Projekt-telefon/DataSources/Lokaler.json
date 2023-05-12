@@ -1,0 +1,95 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crb3b_lokales",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crb3b_lokale",
+    "MaxGetRowsCount": 500,
+    "Name": "Lokaler",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Ejer",
+      "crb3b_AMgruppe": "AM-gruppe",
+      "crb3b_lok_navn": "lok_navn",
+      "crb3b_lokale_AsyncOperations": "Systemjob",
+      "crb3b_lokale_BulkDeleteFailures": "Fejl under massesletning",
+      "crb3b_lokale_PrincipalObjectAttributeAccesses": "Feltdeling",
+      "crb3b_lokale_ProcessSession": "Processessioner",
+      "crb3b_lokaleid": "Lokale",
+      "crb3b_navn": "Lok_ID",
+      "createdby": "Oprettet af",
+      "createdon": "Oprettet",
+      "createdonbehalfby": "Oprettet af (stedfortræder)",
+      "importsequencenumber": "Importsekvensnummer",
+      "modifiedby": "Ændret af",
+      "modifiedon": "Ændret",
+      "modifiedonbehalfby": "Ændret af (stedfortræder)",
+      "overriddencreatedon": "Posten blev oprettet den",
+      "owningbusinessunit": "Ejende afdeling",
+      "owningteam": "Ejende team",
+      "owninguser": "Ejende bruger",
+      "statecode": "Status",
+      "statuscode": "Statusårsag",
+      "timezoneruleversionnumber": "Versionsnummer for tidszoneregel",
+      "utcconversiontimezonecode": "Tidszonekode for UTC-konvertering",
+      "versionnumber": "Versionsnummer"
+    },
+    "PreferredName": "Lokaler",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Lokaler (Visninger)",
+    "Name": "_crb3b_lokale_views",
+    "RelatedEntityName": "Lokaler",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "030a6516-7b0a-4ab7-b06f-d2b385e81b04": "Lokale Lookup View",
+      "69cca2d3-6dfb-4edb-be4f-70e588299d79": "Lokale Associated View",
+      "c6057323-22bf-490e-bcb5-07870388aaaa": "Lokale Advanced Find View",
+      "e48d09af-bccc-4e18-ba9c-074e5282f884": "Active Lokaler",
+      "fd671946-d9f7-492c-8b3a-c9853edf9f0c": "Inactive Lokaler"
+    }
+  },
+  {
+    "DisplayName": "Status (Lokaler)",
+    "Name": "crb3b_lokale_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Aktiv",
+      "1": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Lokaler"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Lokaler",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Statusårsag (Lokaler)",
+    "Name": "crb3b_lokale_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Aktiv",
+      "2": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Lokaler"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Lokaler",
+    "Type": "OptionSetInfo"
+  }
+]

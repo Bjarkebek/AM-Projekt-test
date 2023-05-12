@@ -1,0 +1,53 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_crb3b_afdeling_forms",
+      "Namespace": "Afdelinger (Formularer)",
+      "Values": {
+        "Information": "ca15be48-0985-4f91-9a9a-8dad9d16c858"
+      }
+    },
+    {
+      "Kind": "default.cds_crb3b_amgrupper_forms",
+      "Namespace": "AM-gruppers (Formularer)",
+      "Values": {
+        "Information": "3464d8cc-129c-4948-bea4-ef2a300a0386"
+      }
+    },
+    {
+      "Kind": "default.cds_crb3b_lokale_forms",
+      "Namespace": "Lokaler (Formularer)",
+      "Values": {
+        "Information": "7196947c-8bf4-4d44-b18e-e54cebb8715e"
+      }
+    },
+    {
+      "Kind": "default.cds_crb3b_vrktjer_forms",
+      "Namespace": "Værktøjers (Formularer)",
+      "Values": {
+        "Information": "f281c506-e820-4064-ac3c-d16061767a69"
+      }
+    },
+    {
+      "Kind": "default.cds_msdyn_organizationalunit_forms",
+      "Namespace": "Afdelinger (Formularer)1",
+      "Values": {
+        "Oplysninger": "cee73876-dae7-4ed3-b97f-a5af43bcfbf6"
+      }
+    },
+    {
+      "Kind": "default.cds_crb3b_afdeling_forms",
+      "Namespace": "Afdelinger_1 (Formularer)",
+      "Values": {
+        "Information": "ca15be48-0985-4f91-9a9a-8dad9d16c858"
+      }
+    },
+    {
+      "Kind": "default.cds_crb3b_afdeling_forms",
+      "Namespace": "Afdelinger (Formularer)11",
+      "Values": {
+        "Information": "ca15be48-0985-4f91-9a9a-8dad9d16c858"
+      }
+    }
+  ]
+}
